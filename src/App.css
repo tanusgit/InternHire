@@ -1,8 +1,16 @@
 .nav-color{
   background-color: #0CEFA2;
 }
+.h3{
+  background-color: aquamarine;
+}
+.container{
 
+width: auto;
+height: 200px;
+background-color:red;
 
+}
 
 
 .App {

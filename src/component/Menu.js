@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import firstpage from '../images/firstpage.jpg';
 import {
   Collapse,
   Navbar,
@@ -23,7 +24,7 @@ class Menu extends Component{
 
   render(){
   return (
-    <div>
+    <div className="container-fullwidth" >
       <Navbar className="nav-color" light expand="md">
         <NavbarBrand href="/">JobList</NavbarBrand>
           <Nav className="mr-auto" navbar>
