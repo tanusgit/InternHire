@@ -2,11 +2,13 @@ import React from 'react';
 import logo from './logo.svg';
 import Menu from './component/Menu';
 import './App.css';
+import Welcome from './component/welcomepic';
 
 function App() {
   return (
     <div className="App">
     <Menu></Menu>
+    <Welcome></Welcome>
     </div>
   );
 }

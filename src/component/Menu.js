@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import firstpage from '../images/firstpage.jpg';
 import {
   Collapse,
   Navbar,
@@ -29,7 +28,7 @@ class Menu extends Component{
         <NavbarBrand href="/">JobList</NavbarBrand>
           <Nav className="mr-auto" navbar>
             <NavItem>
-              <NavLink href="/components/">Post Internship</NavLink>
+              <NavLink href="/PostInternships">Post Internship</NavLink>
             </NavItem>
             <NavItem>
               <NavLink href="https://github.com/reactstrap/reactstrap">Dashboard </NavLink>
