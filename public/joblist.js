@@ -39,6 +39,32 @@ class UI{
         `;
 
         list.appendChild(row);
+    }
+
+
+    static deletebook(el){
+      if(el.classList.contains('delete')){
+          el.parentElement.parentElement.remove();
+      }
+    }
+
+
+    static showalert(message, className){
+        const div = document.createElement('div');
+        div.className=`alert alert-${className}`;
+        div.appendChild(document.createTextNode(message));
+        const conatiner = document.querySelector('.container');
+        const form = document.querySelector('#job-form');
+        conatiner.insertBefore(div, form);
+        //vanish in 3 second
+        setTimeout(()=> document.querySelector('.alert').remove(), 3000);
+    }
+
+
+    static clearfields(){
+        document.querySelector('#title').value ='';
+        document.querySelector('#author').value ='';
+        document.querySelector('#isbn').value ='';
 
     }
     
@@ -57,10 +83,24 @@ document.querySelector('#job-form').addEventListener('submit', (e) => {
     const author = document.querySelector('#author').value;
     const isbn = document.querySelector('#isbn').value;
 
-    //instatntiate book
+    //validate
+    if(title==='' || author === '' || isbn ===''){
+        UI.showalert('please fill in all the forms', 'danger');
+    }else{
+        //instatntiate book
     const book = new Book(title, author, isbn);
-    console.log(book);
+    //console.log(book);
 
+    //Add book to UI
+    UI.addBooktoList(book);
+
+    //clear fields
+    UI.clearfields();
+    }
 });
 
 //event: remove a book
+document.querySelector('#book-list').addEventListener('click', (e)=> {
+   UI.deletebook(e.target);
+
+});
