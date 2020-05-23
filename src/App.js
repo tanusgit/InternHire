@@ -5,12 +5,16 @@ import './App.css';
 import Welcome from './component/welcomepic';
 import Job from './component/job';
 import Jobcomponent from './component/joblistcomponent';
+import Main from './component/Main';
 function App() {
   return (
     <div className="App">
     <Menu></Menu>
     <Jobcomponent></Jobcomponent>
+    <Main></Main>
+
     </div>
+
   );
 }
 
