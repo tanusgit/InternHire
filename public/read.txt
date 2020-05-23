@@ -1,0 +1,4 @@
+for bootstrap go to https://bootswatch.com then select a theme and right 
+click on the download button and do open in the new tab to copy the path
+of the link
+then go to https://www.bootstrapcdn.com/fontawesome/ for font 

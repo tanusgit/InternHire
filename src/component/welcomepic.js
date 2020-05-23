@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Jumbotron} from 'reactstrap';
 class Welcome extends Component{
 
     constructor(props){
@@ -7,13 +8,11 @@ class Welcome extends Component{
 
     render(){
         return(
-            
-                <div className="img">
-                    <div className="col-sm-12">
-                    <p>hello</p>
-                    </div>
+            <Jumbotron className="img">
+                <div className="col-12 col-md-6">
+                <h1>Apply for intership today</h1>
                 </div>
-        
+            </Jumbotron>
             
         );
     }

@@ -3,12 +3,13 @@ import logo from './logo.svg';
 import Menu from './component/Menu';
 import './App.css';
 import Welcome from './component/welcomepic';
-
+import Job from './component/job';
 function App() {
   return (
     <div className="App">
     <Menu></Menu>
     <Welcome></Welcome>
+    <Job></Job>
     </div>
   );
 }
