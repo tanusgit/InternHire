@@ -4,12 +4,12 @@ import Menu from './component/Menu';
 import './App.css';
 import Welcome from './component/welcomepic';
 import Job from './component/job';
+import Jobcomponent from './component/joblistcomponent';
 function App() {
   return (
     <div className="App">
     <Menu></Menu>
-    <Welcome></Welcome>
-    <Job></Job>
+    <Jobcomponent></Jobcomponent>
     </div>
   );
 }

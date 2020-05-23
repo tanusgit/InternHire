@@ -4,17 +4,20 @@
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#0CEFA2" />
+    <meta name="theme-color" content="" />
     <meta
       name="description"
       content="Web site created using create-react-app"
     />
+    <link rel="stylesheet"   samesite="None" href="https://bootswatch.com/4/cosmos/bootstrap.min.css">
+    
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <link rel="stylesheet" href="https://bootswatch.com/4/yeti/bootstrap.min.css">
+
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
     
     <!--
+      <link samesite="None" rel="stylesheet" href="https://bootswatch.com/4/simplex/bootstrap.min.css">
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
@@ -31,37 +34,7 @@
     <title>Job List App</title>
   </head>
   <body>
-    <div class="container mt-4">
-      <h1 class="display-4 text-center"> <i class="fas fa-book-open text-primary"></i>My<span class="text-primary">Job</span>List</h1>
-      <form id="job-form">
-        <div class ="form-group">
-          <label for="title">Title</label>
-          <input type="text" id="title" class="form-control">
-        </div>
-        <div class ="form-group">
-          <label for="author">Author</label>
-          <input type="text" id="author" class="form-control">
-        </div>
-        <div class ="form-group">
-          <label for="isbn">ISBN</label>
-          <input type="text" id="isbn" class="form-control">
-        </div>
-        <input type="submit" value="add job"
-         class="btn btn-primary btn-block">
-      </form>
-      <table class="table table-stripped mt-5">
-        <thead>
-          <tr>
-            <th>Title</th>
-            <th>Author</th>
-            <th>ISBN</th>
-            <th></th>
-
-          </tr>
-        </thead>
-        <tbody id="book-list"></tbody>
-      </table>
-    </div>
+    
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--

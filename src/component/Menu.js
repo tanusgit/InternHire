@@ -24,8 +24,8 @@ class Menu extends Component{
   render(){
   return (
     <div className="container-fullwidth" >
-      <Navbar className="nav-color" light expand="md">
-        <NavbarBrand href="/">JobList</NavbarBrand>
+      <Navbar classname = "bg-dark" expand="md">
+        <NavbarBrand href="/"><i className="fas fa-briefcase text-primary"></i>JobList</NavbarBrand>
           <Nav className="mr-auto" navbar>
             <NavItem>
               <NavLink href="/PostInternships">Post Internship</NavLink>
