@@ -11,7 +11,7 @@ function App() {
     <div className="App">
     <Menu></Menu>
     <Jobcomponent></Jobcomponent>
-    <Main></Main>
+    
 
     </div>
 
