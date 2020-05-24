@@ -4,3 +4,6 @@ of the link
 then go to https://www.bootstrapcdn.com/fontawesome/ for font 
 
 for font awesome: https://fontawesome.com/how-to-use/customizing-wordpress/snippets/setup-cdn-webfont
+
+for giphy:
+https://getbootstrap.com/docs/3.3/components/#navbar

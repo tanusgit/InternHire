@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="newjob.js"></script>
+    <title>Job List</title>
+</head>
+<body>
+    <div>List of jobs</div>
+    <div id="joblisted">
+    </div>
+<script>
+    function displayJobs() {
+        var jl = document.getElementById("joblisted");
+        console.log(joblist);
+        var lst = "";
+        for (i in joblist) {
+            console.log(i);
+            lst += '<li>' + joblist[i].Name + ','
+                 + joblist[i].Email +  ',' + joblist[i].JobTitle + '</li>';
+        }
+        console.log(lst);
+        jl.innerHTML = lst;
+    }
+    displayJobs();
+</script>
+
+</body>
+</html>
