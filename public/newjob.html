@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JobList</title>
+    <script src="newjob.js"> </script>
+    <style>
+        a {
+            font-size: 20px;
+        }
+
+        aside {
+            width: 40%;
+            height: 700px;
+            padding-left: .5rem;
+            margin-left: .5rem;
+            margin-top: 8px;
+            float: right;
+            box-shadow: inset 5px 0 5px -5px #29627e;
+            font-style: italic;
+            color: #29627e;
+        }
+
+        aside>p {
+            margin: .5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="conatiner" style="margin-left: 25px; margin-right: 25px; border-color: blue;">
+        <div id="co">
+            <nav>
+
+                <a href="#">post your internship</a>
+                <a href="#">Login</a>
+                <a href="#">Profile</a>
+                <a href="#">Job</a>
+            </nav>
+            <aside>
+                <p>The Rough-skinned Newt defends itself with a deadly neurotoxin.</p>
+                
+            </aside>
+            <section>
+                <h1>
+                    Post your job here
+                </h1>
+                <hr>
+                <p>we are Jobpost group.We have amazing team to find you
+                    best intern.
+                </p>
+            </section>
+
+            <section>
+                <h1>
+                    About us
+                </h1>
+
+                <hr>
+                <p> We are here to help you find amazing interns. So
+                    use this platform to get your desired intern. Make sure
+                    you fill all the form in order to post your job.
+                </p>
+            </section>
+            <hr>
+            Please fill out the following form to get started
+            <hr>
+            <div>
+                <section>
+                    <h2>Contact information</h2>
+                    <fieldset>
+                        <legend>Job Type</legend>
+                        <ul>
+                            <li>
+                                <label for="title_1">
+                                    <input type="radio" id="title_1" name="title" value="K">
+                                    Full-time
+                                </label>
+                            </li>
+                            <li>
+                                <label for="title_2">
+                                    <input type="radio" id="title_2" name="title" value="Q">
+                                    part-time
+                                </label>
+                            </li>
+                            <li>
+                                <label for="title_3">
+                                    <input type="radio" id="title_3" name="title" value="J">
+                                    Remote
+                                </label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <p>
+                        <label for="name">
+                            <span>Name: </span>
+                            <strong><abbr title="required">*</abbr></strong>
+                        </label>
+                        <input type="text" id="name" name="username">
+                    </p>
+                    <p>
+                        <label for="mail">
+                            <span>E-mail: </span>
+                            <strong><abbr title="required">*</abbr></strong>
+                        </label>
+                        <input type="email" id="mail" name="usermail">
+                    </p>
+                    <p>
+                        <label for="pwd">
+                            <span>Job title: </span>
+                            <strong><abbr title="required">*</abbr></strong>
+                        </label>
+                        <input type="text" id="jobtitle" name="password">
+                    </p>
+                </section>
+            </div>
+
+        </div>
+
+        <button onclick="c()" style="width: 200px; height:50px;">click me</button>
+        <div id="makejob">
+            
+        </div>
+    </div>
+   
+</body>
+
+</html>
